@@ -18,6 +18,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'surface',
 ]
 
 MIDDLEWARE = [
@@ -35,7 +36,8 @@ ROOT_URLCONF = 'chrjlim.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'chrjlim/templates/'),
+                 os.path.join(BASE_DIR, 'surface/templates/')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

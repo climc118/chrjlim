@@ -35,3 +35,8 @@ a {
     margin-bottom: 20px;
     margin-top: 8px;
 }
+
+.greeting {
+    display: flex;
+    flex-wrap: wrap;
+}

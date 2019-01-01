@@ -1,7 +1,7 @@
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '7+s$(4bvyui+*suudaa*#vb^vi7z8d3y+vqnci+*lh(cytp1bw'
@@ -36,8 +36,8 @@ ROOT_URLCONF = 'chrjlim.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates/'),
-                 os.path.join(BASE_DIR, 'surface/templates/')],
+        'DIRS': [os.path.join(BASE_DIR, 'chrjlim/templates/chrjlim'),
+                 os.path.join(BASE_DIR, 'surface/templates/surface')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -89,4 +89,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT= os.path.join(BASE_DIR, 'static/')
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, '/static/')
+]

@@ -6,3 +6,7 @@ class SurfaceHomeView(TemplateView):
 
     template_name = 'surface_home.html'
 
+    def get_context_data(self, **kwargs):
+        context = super(SurfaceHomeView, self).get_context_data(**kwargs)
+        context['page_title'] = "Home"
+        return context

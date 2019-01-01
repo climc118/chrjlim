@@ -17,4 +17,15 @@
 
 .label-month {
     font-size: 40px;
+    margin-top: -20px;
+}
+
+.label-project {
+    font-size: 16px;
+    text-align: center;
+}
+
+hr {
+    width: auto;
+    margin: 10px;;
 }

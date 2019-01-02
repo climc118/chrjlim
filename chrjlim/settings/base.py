@@ -18,6 +18,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cavern',
     'surface',
 ]
 
@@ -37,7 +38,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR, 'chrjlim/templates/chrjlim'),
-                 os.path.join(BASE_DIR, 'surface/templates/surface')],
+                 os.path.join(BASE_DIR, 'surface/templates/surface'),
+                 os.path.join(BASE_DIR, 'cavern/templates/cavern')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

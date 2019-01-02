@@ -22,7 +22,11 @@ h4 {
     color: #00000090;
     margin-left: 20px;
     margin-right: 20px;
-    
+}
+
+hr {
+    width: auto;
+    margin: 10px;
 }
 
 a {

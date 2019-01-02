@@ -41,3 +41,16 @@ a {
     display: flex;
     flex-wrap: wrap;
 }
+
+footer {
+    margin-right: 10px;
+    position: fixed;
+    bottom: -15px;
+    right: 0px;
+}
+
+.contact-logos {
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    background-color: #00000060
+}

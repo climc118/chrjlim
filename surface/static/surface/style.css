@@ -5,8 +5,8 @@
 }
 
 .container-month{
-    min-height: 400px;
-    min-width: 400px;
+    min-height: 350px;
+    min-width: 350px;
     border-radius: 35%;
     display: flex;
     justify-content: center; /* align horizontally */

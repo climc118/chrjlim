@@ -1,7 +1,7 @@
 from django.conf.urls import url
 from django.urls import path
 
-from surface.views import SurfaceHomeView, ViewSurface
+from surface.views import SurfaceHomeView
 
 app_name = "surface"
 urlpatterns = [

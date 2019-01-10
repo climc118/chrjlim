@@ -13,15 +13,19 @@
         <link href="{% static "surface/style.css" %}" rel="stylesheet">
 
         {% block css %}{% endblock %}
-</head>
-<body>
-        <div>{% block content %}{% endblock %}</div>
-</body>
-<footer>
-        <div class="contact-logos">
+
+        <!-- Social Media Links -->
+        <div class="social-media-logos">
                 <a href="https://www.linkedin.com/in/christian-lim-429480aa/" target="_blank" class="fab fa-linkedin fa-3x"></a>
                 <a href="mailto:christianlim.js@gmail.com" class="fas fa-envelope fa-3x"></a>
                 <a href="https://github.com/climc118?tab=overview" target="_blank" class="fab fa-github fa-3x"></a>
         </div>
+</head>
+<body>
+        <div>{% block content %}{% endblock %}</div>
+        <hr>
+</body>
+<footer>
+        <div class="footer-contact-info">Contact Me: christianlim.js@gmail.com!</div>
 </footer>
 </html>

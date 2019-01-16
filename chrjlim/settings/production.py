@@ -2,7 +2,7 @@ from .base import *
 
 PRODUCTION = True
 DEBUG = False
-ALLOWED_HOSTS = ['chrjlim.f7zedgcfji.us-west-2.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['chrjlim.vtv7ryjz3f.us-east-1.elasticbeanstalk.com']
 
 DATABASES = {
     'default': {
@@ -15,4 +15,4 @@ DATABASES = {
     }
 }
 
-SECRET_KEY = 'ohwowthisissuchanunbreakablesecretkeysupersecretkeyobfuscationandallthat'
+SECRET_KEY = 'ajd232pmxmkadf9ebwosqkxqpklancbvwoiefnij42nkn6kkjca'

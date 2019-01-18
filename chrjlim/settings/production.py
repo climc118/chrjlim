@@ -2,7 +2,7 @@ from .base import *
 
 PRODUCTION = True
 DEBUG = False
-ALLOWED_HOSTS = ['chrjlim.vtv7ryjz3f.us-east-1.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['chrjlim.cepxmm978p.us-east-2.elasticbeanstalk.com']
 
 DATABASES = {
     'default': {

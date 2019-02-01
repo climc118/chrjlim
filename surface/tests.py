@@ -1,0 +1,1 @@
+# Tests are unnecessary, no logic manipulation exists.

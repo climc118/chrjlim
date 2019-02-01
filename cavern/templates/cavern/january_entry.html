@@ -4,7 +4,7 @@
 <div class="cavern-heading">
         <h1>January</h3>  
 
-        <h2>The chrjlim.io website</h4>
+        <h2>Building the chrjlim.io website, </h2>
 </div>
 <hr>
 
@@ -25,23 +25,34 @@
                 cards in different combinations but found the dimensions of the cards too small, the spacing cramped, or the website as a whole just simply uncomfortable. I focused on making 
                 the site mobile-responsive through the use of flexboxes, however, and so would place the cards in rows of 1 or 2 to maintain a sensible amount of size and padding.</p>
 
-                <p>This is the first time I designed something from the ground up independently. I had no theme to extend, and so had to come up with something myself. What followed were multiple
-                days of me literally picking different colors. I recruited the help of an artisticly-critical friend who helped me settle on a combination of color choices that didn't make me fidget.
-                In the end, we settled on a pastel color palette, which I found warm and inviting.</p>
+                <p>This is the first time I designed something from the ground up independently. I had no theme to extend, and so had to come up with something myself. It was not difficult for me to settle
+                on a general look of the website in terms of font, padding, and employed shapes. However, choosing colors that didn't make the site look like trash. What followed were multiple
+                days of me picking different colors, randomizing color placements, and hesitant decision-making. I recruited the help of an artisticly-critical friend who helped me settle on a combination 
+                of color choices that didn't make me fidget. In the end, we settled on a pastel color palette, which I found warm and inviting.</p>
 
         </div>
 
         <div class="cavern-sub-heading">Under the hood...</div>
         <div class="cavern-sub-section">
                 <p>I decided to use Django for development, the main reason being that I simply love the intuitive and convenient nature of the framework.
-                I am also planning on hooking the backend up with AWS to gain some exposure on interacting with cloud platforming. I hope that this brief stint 
+                I also hooked the backend up with AWS to gain some exposure on interacting with cloud platforming. I hope that this brief stint 
                 can benefit me as my upcoming workplace is all about AWS, and only AWS.</p>
-                <p>I mapped my URLs around terms elicting vibes of undersea exploration (I binged Deadliest Catch this winter break which led me to look up a bunch
-                of random things about the ocean on Wiki and it all snowballed from there), and find it to be a small but fun little personal addition to the site. 
-                The domain name could have been something rather straightforward and boring, but I found the $60/year I paid for my domain worth it. 
+
+                <p>The website itself took about 6 hours to finish. AWS, however, turned out to be more troublesome than I hoped for. There were a few nuances
+                that had me scratching my head for a while, such as the fact that you need to deploy the server with the "--staged" flag in order to tell the 
+                elastic-beanstalk CLI to source the code locally, otherwise, it looks at your Git repository. This was incredibly annoying when I was trying to
+                fix an issue with the WSGI file, as none of my changes were actually being observed. Nonetheless, with struggle, comes experience. I have gotten
+                to familiarize myself with the AWS console, best practices with IAM users and allocating permissions to groups, the different types of instances,
+                and setting up/deploying a new website.
                 </p>
-                <!--TODO: Update once AWS is running-->
+
+                <p>I mapped my URLs around terms elicting vibes of undersea exploration (I binged Deadliest Catch this winter break which led me to look up a bunch
+                of random things about the ocean on Wiki and it all snowballed from there), and found it to be a small but fun little personal addition to the site. 
+                I'll handle the domain some other time so we don't have to see AWS's atrocious default domain name constantly.
+                </p>
+                
         </div>
+        <div class="cavern-sub-section">Note to self: add a button to redirect back to the homepage.</div>
 </div>
 
 {% endblock %}
